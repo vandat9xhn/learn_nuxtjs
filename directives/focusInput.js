@@ -1,1 +1,1 @@
-export const focusInput = (el) => el.focus()
+export const focusInput = (el) => el.focus();

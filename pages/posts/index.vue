@@ -11,8 +11,9 @@
 <script>
 export default {
     name: 'Posts',
-    setup() {},
-}
+
+    middleware: ['login'],
+};
 </script>
 
 <style lang="scss"></style>

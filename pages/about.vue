@@ -15,11 +15,11 @@
 </template>
 
 <script>
-import { focusInput } from '../directives/focusInput'
+import { focusInput } from '../directives/focusInput';
 
 export default {
     name: 'AboutPage',
-    loading: false,
+    layout: 'layout1',
 
     head: {
         title: 'About',
@@ -32,14 +32,14 @@ export default {
         ],
     },
     async asyncData({ $axios }) {
-        const res = { data: [1, 2] }
+        const res = { data: [1, 2] };
         // await $axios.get(
         //     'https://react-django-heroku.herokuapp.com/api/city/city-no-token-l/'
         // )
 
         return {
             city_arr: res.data,
-        }
+        };
     },
 
     directives: {
@@ -53,7 +53,7 @@ export default {
     mounted() {
         // console.log(this.$refs)
     },
-}
+};
 </script>
 
 <style lang="sass"></style>
